@@ -7,12 +7,18 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     //
-    public function index(){
-        return view('user.index');
+    public function home (){
+        return view('user.home');
     }
 
-    public function getIntroduction(){
-        return view('introduction');
+    public function getFunc(){
+        return view('user.func');
     }
-
+    
+    public function getDashboard(){
+        return view('user.dash');
+    }
+    public function getAbout(){
+        return view('user.about');
+    }
 }

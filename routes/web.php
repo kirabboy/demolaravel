@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,10 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'home']);
 
 Route::get('/gioi-thieu', [HomeController::class, 'getIntroduction']);
+Route::get('/dash-board', [HomeController::class, 'getDashboard']);
+Route::get('/about', [HomeController::class, 'getAbout']);
+Route::get('/func', [HomeController::class, 'getFunc']);
 
