@@ -14,6 +14,8 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-
-Route::get('/gioi-thieu', [HomeController::class, 'getIntroduction']);
+Route::get('/dasboard', [HomeController::class, 'getDasboard']);
+Route::get('/fat', [HomeController::class, 'getFaT']);
+Route::get('/about', [HomeController::class, 'getAbout']);
+Route::get('/comm', [HomeController::class, 'getComm']);
 
