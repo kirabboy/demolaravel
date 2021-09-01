@@ -13,7 +13,11 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/index', [HomeController::class, 'index']);
 
-Route::get('/gioi-thieu', [HomeController::class, 'getIntroduction']);
+Route::get('/Dashboard', [HomeController::class, 'Dashboard']);
+Route::get('/Function', [HomeController::class, 'Function']);
+Route::get('/About', [HomeController::class, 'About']);
+
+
 

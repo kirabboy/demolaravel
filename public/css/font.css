@@ -1,0 +1,13 @@
+@font-face{
+    font-family:'UTM';
+    src: url('../font/UTMHanzel.woff') format('woff');
+    src: url('../font/UTMHanzel.woff2') format('woff2');
+    display: fallback;
+}
+@font-face{
+    font-family:'BAI';
+    src: url('../font/BaiJamjuree-ExtraLight.woff') format('woff');
+    src: url('../font/BaiJamjuree-ExtraLight.woff2') format('woff');
+    display: fallback;
+}
+
