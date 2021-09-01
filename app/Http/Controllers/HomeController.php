@@ -11,8 +11,16 @@ class HomeController extends Controller
         return view('user.index');
     }
 
-    public function getIntroduction(){
-        return view('introduction');
+    public function getDashboard(){
+        return view('user.dashboard');
+    }
+
+    public function getfuncNtoken(){
+        return view('user.funcNtoken');
+    }
+    
+    public function getaboutus(){
+        return view('user.aboutus');
     }
 
 }

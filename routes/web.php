@@ -15,5 +15,8 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/gioi-thieu', [HomeController::class, 'getIntroduction']);
+Route::get('/dashboard', [HomeController::class, 'getDashboard']);
 
+Route::get('/funcNtoken', [HomeController::class, 'getfuncNtoken']);
+
+Route::get('/aboutus', [HomeController::class, 'getaboutus']);
