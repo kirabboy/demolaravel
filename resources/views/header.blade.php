@@ -13,16 +13,23 @@
 
         body {
             background-color: #140034;
-            background-image: url(./images/bg2.png);
+            background-image: url("{{asset('images/bg2.png')}}");
             background-size: 100%;
+        }
+
+        .ngancach {
+            height: 110px;
         }
 
         /* Navbar */
         .myNav {
-            padding: 20px 50px;
+            background-color: #140034;
+        }
+
+        .myNav .canchinh {
+            width: 100%;
             display: flex;
             justify-content: space-around;
-            background-color: #140034;
         }
 
         .myNav .itemnav a,
@@ -55,22 +62,130 @@
             border-radius: 12px;
         }
 
+        .myNav .btncollapse {
+            outline: none;
+        }
+
+        .myNav .btncollapse i {
+            border-radius: 3px;
+            padding: 5px;
+            color: #fff;
+            background: linear-gradient(0deg, #FF54FF 0%, #9C00BF 49.26%, #5A00A9 100%);
+        }
+
+        .myNav .anhien {
+            display: none;
+        }
+
+        @media only screen and (max-width: 980px) {
+            .myNav .anhien {
+                all: revert;
+            }
+
+            .hometitle .homelogo {
+                width: 250px !important;
+            }
+
+            .homeinput .itemhomeinput input {
+                font-size: 30px !important;
+                height: 80px !important;
+                width: 70% !important;
+            }
+
+            .myFormdashboard {
+                padding: 35px 20px 20px 20px !important;
+            }
+
+            .myFormdashboard input {
+                padding: 20px 30px !important;
+            }
+
+            .ngancach {
+                height: 70px !important;
+            }
+
+            .toongtrai {
+                width: 50% !important;
+            }
+
+            .toongphai {
+                width: 60% !important;
+            }
+
+            .groupitem .item {
+                width: 33% !important;
+            }
+
+            .groupitem {
+                padding: 50px 50px !important;
+            }
+
+            .content .gioithieu {
+                padding: 0 !important;
+            }
+
+            .nhansu {
+                flex-wrap: wrap;
+            }
+
+            .nhansu2 {
+                flex-wrap: wrap;
+            }
+
+            .nhansu .item {
+                width: 45% !important;
+                margin: 0px 0px 80px 0px !important;
+            }
+
+            .backer img {
+                width: 45% !important;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .fNtTitle .subtitle {
+                font-size: 14px !important;
+                text-align: justify;
+            }
+
+            .groupitem .item {
+                width: 100% !important;
+                text-align: center;
+                margin-bottom: 40px !important;
+            }
+
+            .groupitem {
+                padding: 40px 0px 10px 0px !important;
+            }
+
+            .nhansu .item {
+                width: 100% !important;
+            }
+
+            .advisor .item {
+                padding: 50px 0px !important;
+            }
+
+            
+        }
+
         /* Navbar end */
 
         /* Tổ ong */
         .toongtrai {
             position: fixed;
-            width: 400px;
-            left: 0px;
-            top: 576px;
+            width: 26%;
+            left: 0;
+            top: 76%;
+            z-index: -2;
         }
 
         .toongphai {
             position: fixed;
-            width: 460px;
+            width: 32%;
             right: 0px;
-            top: 20px;
-
+            top: 0;
+            z-index: -1;
         }
 
         /* Tổ ong end */
@@ -80,11 +195,10 @@
             font-family: 'Audiowide', cursive;
             color: #fff;
             font-size: 37px;
-            padding-top: 20px;
             font-weight: bold;
         }
 
-        .homeinput .col-4 p {
+        .homeinput .itemhomeinput p {
             font-size: 24px;
             font-family: 'Bai Jamjuree', sans-serif;
             font-weight: 300;
@@ -92,7 +206,7 @@
             margin-bottom: 25px;
         }
 
-        .homeinput .col-4 input {
+        .homeinput .itemhomeinput input {
             font-family: 'Bai Jamjuree', sans-serif;
             font-weight: 700;
             font-size: 40px;
@@ -109,17 +223,13 @@
             margin-bottom: 70px;
         }
 
-        .iconfooter .row .col-4 {
-            display: flex;
-            justify-content: space-between;
-        }
-
         .iconfooter a img {
             width: 50px;
         }
 
-        .iconfooter .row .col-4 {
-            padding: 0px;
+        .hometitle .homelogo {
+            width: 300px;
+            margin-bottom: 20px;
         }
 
         /* Main home end */
@@ -165,7 +275,6 @@
             outline: none;
         }
 
-        .myFormdashboard input.chon,
         .myFormdashboard input:hover,
         .myFormdashboard input:focus {
             border-color: #FF54FF;
@@ -257,7 +366,7 @@
         }
 
         .content .gioithieu {
-            padding-top: 8px;
+            padding: 8px 30px 0px 30px;
             font-family: Bai Jamjuree;
             font-weight: 300;
             font-size: 14px;
@@ -266,14 +375,20 @@
         .nhansu {
             display: flex;
             justify-content: space-between;
-        }
-
-        .nhansu2 {
-            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .nhansu .item {
-            width: 275px;
+            width: 30%;
+            margin-bottom: 70px;
+        }
+
+        .nhansu .item.itemtrai {
+            margin-left: 170px;
+        }
+
+        .nhansu .item.itemphai {
+            margin-right: 170px;
         }
 
         .backer {
@@ -326,29 +441,36 @@
 </head>
 
 <body>
-    <nav class="fixed-top">
-        <div class="myNav" id="myNav">
-            <div class="itemnav">
-                <a class="nav-link @if(\Request::is('/') ) active  @endif" href="./">Home</a>
-            </div>
-            <div class="itemnav">
-                <a class="nav-link @if(\Request::is('dashboard*') ) active  @endif" href="./dashboard">Dashboard</a>
-            </div>
-            <div class="itemnav">
-                <a class="nav-link @if(\Request::is('funcNtoken*') ) active  @endif" href="./funcNtoken">Functions and tokenomics</a>
-            </div>
-            <div class="itemnav">
-                <a class="nav-link @if(\Request::is('aboutus*') ) active  @endif" href="./aboutus">About Us</a>
-            </div>
-            <div class="itemnav">
-                <a class="nav-link">Community</a>
-            </div>
-            <div class="itemnav">
-                <button>Connect Wallet</button>
+    <nav class="navbar navbar-expand-lg myNav fixed-top">
+        <a class="navbar-brand anhien" href="{{url('/')}}"><img src="{{asset('images/logo1.png')}}" width="140px" alt="logo"></a>
+        <button class="navbar-toggler btncollapse" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-grip-lines"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav canchinh">
+                <div class="itemnav">
+                    <a class="nav-link @if(\Request::is('/') ) active  @endif" href="{{url('/')}}">Home</a>
+                </div>
+                <div class="itemnav">
+                    <a class="nav-link @if(\Request::is('dashboard*') ) active  @endif" href="{{url('/dashboard')}}">Dashboard</a>
+                </div>
+                <div class="itemnav">
+                    <a class="nav-link @if(\Request::is('funcNtoken*') ) active  @endif" href="{{url('/funcNtoken')}}">Functions and tokenomics</a>
+                </div>
+                <div class="itemnav">
+                    <a class="nav-link @if(\Request::is('aboutus*') ) active  @endif" href="{{url('/aboutus')}}">About Us</a>
+                </div>
+                <div class="itemnav">
+                    <a class="nav-link">Community</a>
+                </div>
+                <div class="itemnav">
+                    <button>Connect Wallet</button>
+                </div>
             </div>
         </div>
     </nav>
-    <img class="toongtrai" src="./images/trai.png" alt="trai">
-    <img class="toongphai" src="./images/phai.png" alt="phai">
-    <div style="margin-top: 110px;"></div>
+
+    <img class="toongtrai" src="{{asset('images/trai.png')}}" alt="trai">
+    <img class="toongphai" src="{{asset('images/phai.png')}}" alt="phai">
+    <div class="ngancach"></div>
     <div id="main">

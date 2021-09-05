@@ -1,30 +1,29 @@
 @extends('master')
 @section('content')
-<div style="height: 100px;"></div>
 
 <div class="container">
     <div class="row text-center fNtTitle">
         <div class="col-12">
             <p class="maintitle">FUNCTIONS AND TOKENOMICS</p>
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
+                <div class="col"></div>
+                <div class="col-lg-8 col-md-10 col-sm-12 p-0">
                     <p class="subtitle m-0">PolyPlus is the First RewardPad in Crypto World where investors can earn reward
                         automatically through their investment. Polyplus can be considered as the best farming protocol
                         (RewardPad) which is a combination of Yield Farming and Autofarming.
                     </p>
                 </div>
-                <div class="col-2"></div>
+                <div class="col"></div>
             </div>
         </div>
     </div>
-    <div style="height: 90px;"></div>
+    <div style="height: 70px;"></div>
     <div class="row">
-        <div class="col-2"></div>
+        <div class="col"></div>
         <div class="col-lg-8 col-sm-12">
-            <img src="./images/bieudo.png" alt="bieudo" width="100%">
+            <img src="{{asset('images/bieudo.png')}}" alt="bieudo" width="100%">
         </div>
-        <div class="col-2"></div>
+        <div class="col"></div>
     </div>
     <div style="height: 20px;"></div>
     <div class="row">
