@@ -4,155 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="public/css/app.css" rel="stylesheet">
+    <link  href="public/css/dash.css" rel="stylesheet">
     
 </head>
 <body>
 @extends('master')
 @section('content')
 
-<section class="box">
+<section class="con">
+    <div class="function d-flex flex-column justify-content-center align-items-center"  >
+    <div class="func-item d-flex flex-column justify-content-center align-items-center" >
+    <p  class=" titfunc font-weight-bold text-light text-center">
  
-<div class="box1" >
-  
     
-</div>
-<div class="box2" > 
-<div class="func" >
-        <h1  style="font-weight:bold;">
         FUNCTION AND TOKENOMICS
-    </h1>
-    <p class="func-item txt" >
+    </p>
+    <div class="txt " style="font-size: 17px; ">
+    <p >
     PolyPlus is the First RewardPad in Crypto World where investors can earn reward automatically through their investment. Polyplus can be considered as the best farming protocol (RewardPad) which is a combination of Yield Farming and Autofarming.
     </p>
-    
-    <div class="func-item">
-        <img src="public/images/g12.png" alt="">
     </div>
+   
     
-    <div class="func-item box">
-        <div class="box-item">
+    </div>
+    <div class="func-item mt-4 row">
+        <img class="col-12" src="public/images/g12.png" alt="">
+    </div>
+    <div class="func-item1 row container  " >
+        <div class="box-item pl-lg-4 col-lg-3 col-md-4 col-sm-6 col-6" >
             <h6 class="tit">ANGEL ROUND</h6>
             <h6 class="pt">10,000,000(10%)</h6>
 
 
         </div>
-        <div class="box-item"> 
+        <div class="box-item col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">seed round</h6>
             <h6 class="pt">15,000,000 (15%)</h6>
         </div>
-        <div class="box-item"> 
+        <div class="box-item col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">Marketing</h6>
             <h6 class="pt">20,000,000 (20%)</h6></div>
-        <div class="box-item">
+        <div class="box-item col-lg-3 col-md-4 col-sm-6 col-6">
               <h6 class="tit">Liquidity</h6>
             <h6 class="pt">10,000,000(10%)</h6></div>
-        <div class="box-item"> 
+        <div class="box-item  pl-lg-4 col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">Private round</h6>
             <h6 class="pt">15,000,000 (15%)</h6></div>
-        <div class="box-item"> 
+        <div class="box-item  col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">Public round</h6>
             <h6 class="pt">5,000,000 (5%)</h6></div>
-        <div class="box-item"> 
+        <div class="box-item col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">team</h6>
             <h6 class="pt">6,000,000 (6%)</h6></div>
-        <div class="box-item"> 
+        <div class="box-item  col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">Development</h6>
             <h6 class="pt">9,000,000 (9%)</h6></div>
-            <div class="box-item"> 
+            <div class="box-item pl-lg-4 col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">Advisor</h6>
             <h6 class="pt">5,000,000 (5%)</h6></div>
-            <div class="box-item"> 
+            <div class="box-item col-lg-3 col-md-4 col-sm-6 col-6"> 
              <h6 class="tit">partner</h6>
             <h6 class="pt">5,000,000 (5%)</h6></div>
         
         
        
-    </div>
-    
-    
-       
-    </div>
-  
-    </div>
-    
-  
-    </div>
-    <div class="social">
-    <div class="social-item">
-    <img src="public/images/tele.png" alt="">
-    </div>
-    <div class="social-item">
-    <img src="public/images/tw.png" alt="">
-    </div>
-    <div class="social-item">
-    <img src="public/images/face.png" alt="">
-
-    </div>
-    <div class="social-item"> <img src="public/images/dc.png" alt=""></div>
-    <div class="social-item"> <img src="public/images/em.png" alt=""></div>
 </div>
-</div>
-
-
+    </div>
+@endsection
 </section>
 
 
-@endsection
 </body>
-<style>
- .func-item.txt{ font-family: Bai Jamjuree;
-font-size: 17px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px;
-letter-spacing: 0px;
-text-align: center;
-color: #ffffff;
-}
-.func h1{ color:#FFFFFF}
-.func-item{
-    margin-bottom: 100px;
-    margin-top:10px
-}
-.func-item.box{ 
-   
-    width:160%;
-    height:450px;
-    z-index: 99;
-    background: #14032D;
-border-radius: 12px;
-display:flex;
-flex-direction:row;
-
-flex-wrap:wrap;
-align-items:center;padding-left:100px;
-padding-top:70px;
-padding-bottom:50px
-
-
-
-
-
-
-}
-.box-item{
-  
-    display:flex;
-    flex-direction:column;
-    align-self: start;
-   
-    margin: 5px 30px;
-    padding:0
-    
-    
-    
-}
-.pt{font-weight:400;
-color:#ffffff;}
-.tit{color:#C835F8; 
-font-weight:bold;
-text-transform:uppercase}
-
-</style>
 </html>
