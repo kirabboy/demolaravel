@@ -11,6 +11,9 @@
     <title>Document</title>
 </head>
 <body>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+
 <div class="load-page">
         <span></span>
     </div>

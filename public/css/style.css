@@ -224,6 +224,7 @@ body {
   border: 2px solid #C835F8;
   padding: 30px 215px;
   display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .content__number span {
@@ -511,6 +512,86 @@ input[type=text] {
   color: #ffffff;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#180045), to(#16003d));
+  background: linear-gradient(to top, #180045, #16003d);
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+#progressbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#180045), to(#16003d));
+  background: linear-gradient(to top, #180045, #16003d);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+#progressbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#180045), to(#16003d));
+  background: linear-gradient(to top, #180045, #16003d);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   :root {
     --font-size:14px;
@@ -528,6 +609,9 @@ input[type=text] {
   }
   .team {
     padding-top: 100px;
+  }
+  .team_title h3 {
+    font-size: 28px;
   }
   .team_title h3::before {
     width: 50px;
@@ -593,6 +677,9 @@ input[type=text] {
   }
   .team {
     margin-top: 100px;
+  }
+  .team_title h3 {
+    font-size: 30px;
   }
   .team_title h3::before {
     width: 70px;
