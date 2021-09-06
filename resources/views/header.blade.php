@@ -15,23 +15,30 @@
 </head>
 <body>
 <div id="topnav">
-<nav  class="navbar justify-content-center navbar-fixed-top">
-    <li class="nav-item">
-        <a class="nav-link" href="{{url('')}}/">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{url('')}}/dasboard">Dasboard</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{url('')}}/fat">Function and Tokenomics</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{url('')}}/about">About Us</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{url('')}}/comm">Community</a>
-    </li>
-    <button class="btn-lg btn-primary" type="submit">Connect Wallet</button>   
+<nav  class="navbar justify-content-center navbar-expand-md navbar-fixed-top">    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <img src="{{url('public')}}/images/Group.png" style="width:50px; margin-right:10%;">
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav" style="text-algin:center">
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('')}}/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('')}}/dasboard">Dasboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('')}}/fat">Function and Tokenomics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('')}}/about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('')}}/comm">Community</a>
+            </li>
+        </ul>
+        <button class="btn-lg btn-primary nav-btn" type="submit">Connect Wallet</button>       
+    </div>
 </nav>
 </div>
 <div class="container-fluid">

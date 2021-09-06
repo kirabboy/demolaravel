@@ -1,10 +1,12 @@
 
 <footer>
+<div class="col-sm-12">
 <i class="fab fa-2x fa-telegram-plane"></i>
 <i class="fab fa-2x fa-twitter"></i>
 <i  class="fa fa-2x fa-facebook"></i>
 <i class="fab fa-2x fa-discord"></i>
 <i class="fas fa-2x fa-envelope"></i>
+</div>
 </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>

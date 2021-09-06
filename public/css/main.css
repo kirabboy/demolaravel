@@ -23,7 +23,7 @@
         margin-bottom:350px;
         width: 25%;
     }
-    nav{
+    nav, .navbar-collapse{
         list-style: none;
         background-color: #0f053a;
     }
@@ -37,6 +37,12 @@
     nav li{
         padding:15px;
     }
+    .nav-btn{
+        margin-top:20px !important;
+        margin-left: 10%;
+    }
+    .navbar-nav{
+        padding-left: 10%;}
     h3{    
     text-align: center!important;
     margin-top: auto;
@@ -57,6 +63,7 @@
     border: 1px solid rgba(104, 27, 100, 0.911);
     border-radius:10px;
     color: white !important;
+    max-width: 100%;
     }
     .col-12{
         padding:20px;
@@ -89,6 +96,7 @@
         font-size: 15px;
         font-weight: 300;
         width:300px;
+        max-width: 90%;
         background-color:rgba(249, 249, 255, 0);
         border:1px solid white;
         margin:10px;
@@ -153,4 +161,7 @@
     }
     .fandt-table p{
         font-weight:300;
+    }
+    .backer img{
+        padding-top:10%;
     }

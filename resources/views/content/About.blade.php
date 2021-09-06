@@ -5,7 +5,7 @@
             <div class="col-12">
                 <h2 class="ke-ngang">TEAM </h2>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" >
                     <img class="card-img-top" src="{{url('public')}}/images/image1.png" alt="Card image" style="width:50%;margin-left:25%;">
                     <div class="card-body">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </div>    
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" >
                     <img class="card-img-top" src="{{url('public')}}/images/image2.png" alt="Card image" style="width:50%;margin-left:25%;">
                     <div class="card-body">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" >
                     <img class="card-img-top" src="{{url('public')}}/images/image3.png" alt="Card image" style="width:50%;margin-left:25%;">
                     <div class="card-body">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" >
                     <img class="card-img-top" src="{{url('public')}}/images/image4.png" alt="Card image" style="width:50%;margin-left:25%;">
                     <div class="card-body">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" >
                     <img class="card-img-top" src="{{url('public')}}/images/image5.png" alt="Card image" style="width:50%;margin-left:25%;">
                     <div class="card-body">
@@ -56,20 +56,20 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center pb-5">
+        <div class="row justify-content-center pb-5 backer">
             <div class="col-12 ">
                 <h2 class="ke-ngang">BACKER </h2>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <img src="{{url('public')}}/images/IMG_0504.png" alt="">
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <img src="{{url('public')}}/images/IMG_0505.png" alt="">
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <img src="{{url('public')}}/images/IMG_0505.png" alt="">
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <img src="{{url('public')}}/images/IMG_0511.png" alt="">
             </div>
         </div>
@@ -77,7 +77,7 @@
             <div class="col-12">
                 <h2 class="ke-ngang">ADVISOR </h2">
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card bor" >
                     <img class="card-img-top" src="{{url('public')}}/images/image6.png" alt="Card image" style="width:50%;margin-left:25%;">
                     <div class="card-body">
