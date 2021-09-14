@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -8,16 +9,12 @@ class HomeController extends Controller
 {
     //
     public function index(){
-        return view('index');
+        $products = DB::table('product')->where('price','>',5000000)->latest()->get();
+        return view('index', ['products' => $products]);
     }
-    public function Dashboard(){
-        return view('Dashboard');
-    }
-    public function Aboutus(){
-        return view('Aboutus');
-    }
-    public function Function(){
-        return view('Function');
+
+    public function getIntroduction(){
+        return view('introduction');
     }
 
 }
