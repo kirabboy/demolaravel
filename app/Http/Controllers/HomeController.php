@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -8,7 +9,8 @@ class HomeController extends Controller
 {
     //
     public function index(){
-        return view('user.index');
+        $products = DB::table('product')->where('price','>',5000000)->latest()->get();
+        return view('user.index', ['products' => $products]);
     }
 
     public function getDashboard(){
