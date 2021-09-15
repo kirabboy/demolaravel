@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     //
     public function index(){
-        $products = DB::table('product')->where('price','>',5000000)->latest()->get();
+        $products = DB::table('product')->get();
         return view('user.index', ['products' => $products]);
     }
 
