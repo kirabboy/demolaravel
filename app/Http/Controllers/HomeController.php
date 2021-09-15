@@ -13,8 +13,5 @@ class HomeController extends Controller
         return view('index', ['products' => $products]);
     }
 
-    public function getIntroduction(){
-        return view('introduction');
-    }
 
 }

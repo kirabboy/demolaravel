@@ -1,9 +1,8 @@
 @include('header')
-@foreach ( $products as $product)
-
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6" >
+            @foreach ( $products as $product)
+            <div class="col-sx-12 col-md-4 col-lg-3" >
                 <div class="card text-center">
                     <div class="card-img">
                         <img src="{{$product->feature_img}}" style="width:100%">
@@ -17,14 +16,7 @@
                     </div>
                 </div>
             </div>
-
-
+            @endforeach
         </div>
-
     </div>
-@endforeach
 @include('footer')
-
-
-
-
