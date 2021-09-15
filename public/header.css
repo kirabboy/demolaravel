@@ -17,11 +17,7 @@
     color:white;
     background-color:#EC5598;
 }
-@media screen and ( max-width:992px){
-    .header-main{
-        display:none
-    }
-}
+
 .price .btn{
     background-color: #EC5598;
     color: white;
@@ -36,7 +32,7 @@
 
 /*Dan duong font face vao trang*/
 @font-face{
-    src:url(font/UTM\ Flavour.ttf);
+    src:url(font/UTM-Flavour.ttf);
     font-family: UTMF;
 }
 /* Phần index của trang */
@@ -65,21 +61,8 @@
 }
 .text-b{
     color:#EC5598;
-    font-family: UTMF;
+    font-family:UTMF;
 
-}
-
-@media screen and ( max-width:992px){
-    .footer-top{
-        background:none;
-        background-color:#2A363F;
-
-    }
-    .text-a{
-        color:none;
-        color:white;
-
-    }
 }
 
 
@@ -134,3 +117,22 @@
 }
 }
 /*phan ket cua footer va menu-bottom*/
+
+@media screen and ( max-width:992px){
+    .header-main{
+        display:none
+    }
+}
+
+@media screen and ( max-width:992px){
+    .footer-top{
+        background:none;
+        background-color:#2A363F;
+
+    }
+    .text-a{
+        color:none;
+        color:white;
+
+    }
+}
