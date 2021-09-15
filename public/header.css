@@ -33,6 +33,17 @@
 }
 /*phan ket cua header*/
 
+
+/*Dan duong font face vao trang*/
+@font-face{
+    src:url(font/UTM\ Flavour.ttf);
+    font-family: UTMF;
+}
+/* Phần index của trang */
+
+
+
+
 /*Phần css của footer */
 /*footer-top*/
 
@@ -53,7 +64,9 @@
     color: white;
 }
 .text-b{
-    color:#EC5598
+    color:#EC5598;
+    font-family: UTMF;
+
 }
 
 @media screen and ( max-width:992px){

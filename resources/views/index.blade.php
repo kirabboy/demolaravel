@@ -1,5 +1,9 @@
 @include('header')
+
     <div class="container">
+        <h3 class="text-b">
+            <u>San</u> Pham
+        </h3>
         <div class="row">
             @foreach ( $products as $product)
             <div class="col-sx-12 col-md-4 col-lg-3" >
@@ -19,4 +23,5 @@
             @endforeach
         </div>
     </div>
+
 @include('footer')

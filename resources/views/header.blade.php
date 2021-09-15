@@ -9,9 +9,7 @@
     <title>Document</title>
     <link  rel="stylesheet" href="public/header.css">
 </head>
-
-
-<body class="">
+<body>
     <!--hearder-top-->
     <div class="container-fluid " style="background-color: #EC5598;">
         <div class="container">
@@ -78,6 +76,7 @@
 
     </div>
     <hr style="color:#EC5598;">
+
 
 
 
