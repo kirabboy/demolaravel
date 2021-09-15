@@ -1,0 +1,132 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.social_list a{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    border: solid 1px;
+    font-size: 16px;
+}
+.top-bar{    
+    background-color: #ec5598;
+    padding: 10px;
+}
+.top-bar a{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color:#ec5598 ;
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-item :hover{
+    color:#ffffff ;
+    background-color: #ec5598;
+}
+.navbar .navbar-nav .active{
+    background-color: #ec5598;
+}
+.navbar .navbar-nav .active a{
+    color:#ffffff !important;
+}
+.navbar{
+    border-bottom: 1px solid black;
+}
+.br,.des{
+    font-family: 'UTMFlavour';
+    text-align: left;
+    padding: 5px 0;
+    color: #ec5598;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+.br:after,.des:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    margin: 5px 0;
+    background-color:#ec5598;
+}
+#footer .footer-top {
+    width: 100%;
+    min-height: 130px;
+    background: #fafbfb url(https://rbvietnam.com/wp-content/themes/dns-themes/assets/images/footer-img1.png) no-repeat center top;
+    background-size: 1920px 130px;
+    padding: 30px 0 0;
+}
+
+#footer-widgets {
+    width: 100%;
+    padding: 30px 0;
+    background: #2a363f;
+    color: #fff;
+    text-align: justify;
+    line-height: 27px;
+}
+@media(max-width:1000px){
+    #footer .footer-top {
+        background: #2a363f ;
+        color:white;
+    }
+}
+.card{
+    text-align:center;
+}
+.product-name{
+    color:#000 !important;
+    font-weight: bold!important;
+}
+.card .product-name:hover{
+    color:#ec5598 !important;
+}
+.card {
+    border: none;
+}
+.product-price{
+    font-weight: bold;
+    color:#ec5598;
+}
+.btn-add{    
+    background-color:#ec5598;
+    margin:auto 10%;
+    font-size: 0.9rem;
+    color: white;
+}
+.card a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    padding-top: 5%;
+}
+.img-box{
+    width: 100%;
+}
+.img-box img{
+    width: 100%;
+}
+footer{
+    font-size: 14px;
+}
+.btn-dky{
+    background-color:#ec5598;
+    color: white;
+    font-weight: 500;
+}
+footer #footer-widgets ul{
+    padding-inline-start: 0;
+}
+footer #footer-widgets ul li{
+    list-style: none;    
+}
+footer .footer-top .phone-number{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #ec5598;
+}

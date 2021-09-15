@@ -12,10 +12,12 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/dasboard', [HomeController::class, 'getDasboard']);
-Route::get('/fat', [HomeController::class, 'getFaT']);
-Route::get('/about', [HomeController::class, 'getAbout']);
-Route::get('/comm', [HomeController::class, 'getComm']);
+
+Route::get('/product', [HomeController::class, 'index']);
+
+Route::get('/gioi-thieu', [HomeController::class, 'getIntroduction']);
+
+Route::get('/product/{slug}', [HomeController::class, 'product']);
+
 
