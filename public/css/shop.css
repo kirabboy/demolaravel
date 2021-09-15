@@ -1,0 +1,304 @@
+
+@import url('../font/UTM\ Flavour.ttf');
+
+@font-face {
+    font-family: UTMFlavour;
+    src:url('../font/UTM\ Flavour.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --bcolor: #2e2e2e;
+    --mcolor: #f01b8f;
+    --scolor: #ec5598;
+    --ccolor: #e97e3b;
+    --vcolor: #fbca4a;
+}
+
+body {
+    background: #fafbfb;
+    padding: 0;
+    margin: 0 auto;
+    color: var(--bcolor) !important;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .navbar-brand{
+        width: 25%;
+    }
+}	
+ .bar1, .bar3 {
+    width: 28px;
+    height: 5px;
+    background: #cccfe4;
+    margin: 5px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+.nav-item>a{
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent !important;
+    position: relative;
+    padding: 8px 12px;
+    
+}
+.nav-item>a:hover{
+    background: var(--scolor) !important;
+    color: #fff;
+}
+
+dl, dt, dd, ol, ul, li, tr, th, td {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    padding: 0px;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+a {
+    color: var(--scolor);
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+a:hover, a:focus {
+    color: var(--scolor);
+    text-decoration: none;
+}
+
+.box-text {
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+
+.box-text p {
+    margin-top: .1em;
+    margin-bottom: .1em;
+}
+
+.box-text h1, .box-text h2, .box-text h3, .box-text h4, .box-text h5, .box-text h6, .box-text a:not(.button) {
+    line-height: 1.3;
+    margin-top: .1em;
+    margin-bottom: .1em;
+}
+
+.box-image {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-cover {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-top: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.image-cover img {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+.page-title .title {
+    margin: 20px 0;
+    padding-bottom: 25px;
+    font-size: 26px;
+    color: var(--scolor);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.page-title .title:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    margin: 5px auto 0;
+    background-color: #ec5598;
+}
+.tborder {
+    font-family: 'UTMFlavour';
+    text-align: left;
+    padding: 5px 0;
+    color: var(--scolor);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+.tborder:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    margin: 5px 0;
+    background-color: var(--scolor);
+}
+
+/* TOP BAR */
+header.header {
+    border-bottom: solid 1px var(--mcolor);
+    z-index: 30;
+    position: relative;
+}
+
+#header-top {
+    background-color: var(--scolor);
+    padding: 8px 0;
+    min-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#header-top a {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#header-top a:hover, #header-top a:focus, #header-top a:active {
+    color: var(--vcolor);
+}
+
+.social_list a {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    border: solid 1px;
+    font-size: 16px;
+}
+
+
+
+
+.title{
+font-weight: 600;
+font-size: 15px;
+color: #333;
+text-transform: capitalize;
+line-height: 1.4;
+text-align: center;
+
+font-weight: bold;}
+.price{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--scolor);
+}
+.title-prd,.price-ct{
+    text-align: center;
+}
+.addcart{
+   text-align: center;
+    width: 100%;
+   position: absolute;
+   left: 0;
+   bottom: 5px;
+  
+}
+.product-text {
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+.addcart>.btn-add-cart {
+    font-weight: normal;
+    background-color: var(--scolor);
+    color: #fff;
+    border-radius: 10px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-top: 5px;
+}
+.product-box{
+    padding-bottom: 40px;
+}
+#footer .footer-top {
+    width: 100%;
+    min-height: 130px;
+    background: #fafbfb url(https://rbvietnam.com/wp-content/themes/dns-themes/assets/images/footer-img1.png) no-repeat center top;
+    background-size: 1920px 130px;
+    padding: 30px 0 0;
+}
+#footer .footer-top .ftop-number {
+    font-family: 'UTMFlavour';
+    color: #f01b8f;
+    font-size: 45px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (max-width: 767px){
+#footer .footer-top {
+    background: #fbfbfb;
+    padding: 10px;
+}}
+@media (max-width: 991.98px){
+#footer .footer-top {
+    background-position: left;
+    border-top: solid 2px var(--mcolor);
+}}
+#footer-widgets {
+    width: 100%;
+    padding: 30px 0;
+    background: #2a363f;
+    color: #fff;
+    text-align: justify;
+    line-height: 27px;
+}
+#footer .footer-top .ftop-right p {
+    color: #fff;
+    line-height: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#dkft_form .btn-dky {
+    background: #ec5598;
+    border-color: #ec5598;
+    color: #ffffff;
+}

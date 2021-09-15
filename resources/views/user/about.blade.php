@@ -22,7 +22,7 @@
            </div>
        
         <div class="box3 d-flex flex-wrap justify-content-around align-items-center   ">
-    <div class="box-item3 text d-flex  flex-column justify-content-center align-items-center" > 
+    <div class="box-item3 col-lg-3 text d-flex  flex-column justify-content-center align-items-center" > 
         
         <img src="public/images/image 1.png" alt=""  >
     
@@ -33,7 +33,7 @@
                      
 
       </div>
-      <div class="box-item3 text d-flex  flex-column justify-content-center align-items-center"> 
+      <div class="box-item3 col-lg-3 text d-flex  flex-column justify-content-center align-items-center"> 
         
         <img src="public/images/image 2.png" alt=""  >
     
@@ -45,7 +45,7 @@
                      
 
       </div>
-      <div class="box-item3 text d-flex  flex-column justify-content-center align-items-center"> 
+      <div class="box-item3 col-lg-3 text d-flex  flex-column justify-content-center align-items-center"> 
         
         <img src="public/images/image 3.png" alt=""  >
     
@@ -56,7 +56,7 @@
                      
 
       </div>
-    <div class="box-item3 text d-flex  flex-column justify-content-center align-items-center"> 
+    <div class="box-item3 col-lg-3 text d-flex  flex-column justify-content-center align-items-center"> 
         
         <img src="public/images/image 5.png" alt=""  >
     
@@ -67,7 +67,7 @@
                      
 
       </div>
-  <div class="box-item3 text d-flex  flex-column justify-content-center align-items-center"> 
+  <div class="box-item3 col-lg-3 text d-flex  flex-column justify-content-center align-items-center"> 
         
         <img src="public/images/image 4.png" alt=""  >
     

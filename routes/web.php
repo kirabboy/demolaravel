@@ -15,10 +15,10 @@ use App\Http\Controllers\HomeController;
 */
 
 
-
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/dash-board', [HomeController::class, 'getDashboard']);
 Route::get('/about', [HomeController::class, 'getAbout']);
 Route::get('/func', [HomeController::class, 'getFunc']);
-Route::get('/', [HomeController::class, 'home2']);
+Route::get('/home2', [HomeController::class, 'home2']);
 
