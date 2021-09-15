@@ -1,18 +1,30 @@
-
+@include('header')
 @foreach ( $products as $product)
-<b>id:{{$product->id}}</b>
-<div class="product-box">
-    <div class="product-iamge">
-        <img src="{{$product->feature_img}}" alt="">
-    </div>
-    <div class="product-text">
-        <h3 class="title">{{$product->title}}</h3>
-        <b class="price">{{$product->price}}</b>
-        <div>
-            {!!$product->long_desc!!}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6" >
+                <div class="card text-center">
+                    <div class="card-img">
+                        <img src="{{$product->feature_img}}" style="width:100%">
+                    </div>
+                    <div class="card-title">
+                        {{$product->title}}
+                    </div>
+                    <p>{{$product->price}}</p>
+                    <div class="price">
+                        <button class="btn">Them Vao Gio Hang</button>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
-        <button>Mua ngay</button>
+
     </div>
-</div>
 @endforeach
+@include('footer')
+
+
+
+

@@ -1,0 +1,123 @@
+/*phan header*/
+.header-main a{
+    text-decoration:none;
+    color:white
+
+}
+.header-main a:hover{
+    color:black
+
+}
+
+.nd-menu li>a{
+    color:#EC5598;
+    font-size: 100%
+}
+.nd-menu li>a:hover{
+    color:white;
+    background-color:#EC5598;
+}
+@media screen and ( max-width:992px){
+    .header-main{
+        display:none
+    }
+}
+.price .btn{
+    background-color: #EC5598;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.price .btn:hover{
+    color: #EC5598;
+}
+/*phan ket cua header*/
+
+/*Phần css của footer */
+/*footer-top*/
+
+/*Phần css của footer */
+.footer{
+    background-color: #2A363F;
+    margin-bottom: 70px;
+}
+/*footer-top*/
+.footer-top {
+    width:100%;
+    background:url(public/img/footer-img1.png) ;
+    background-size: 100% 100%;
+    padding: 30px 0 0;
+}
+.btn{
+    background-color: #EC5598;
+    color: white;
+}
+.text-b{
+    color:#EC5598
+}
+
+@media screen and ( max-width:992px){
+    .footer-top{
+        background:none;
+        background-color:#2A363F;
+
+    }
+    .text-a{
+        color:none;
+        color:white;
+
+    }
+}
+
+
+/*footer-main*/
+.text-main {
+    color:white
+}
+.text-main a{
+    text-decoration: none;
+    color:white
+}
+
+
+/*menu-bottom*/
+.menu-bt{
+    background-color: #EC5598;
+    margin-bottom: 0;
+    height: auto;
+
+}
+.text-menu-bt a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+
+
+}
+@media screen and ( max-width:769px){
+   .menu-bt{
+       background-color: white;
+       width:100%;
+
+
+   }
+   .text-menu-bt a{
+       color: none;
+       color:#EC5598;
+       font-size: 90%;
+   }
+   .iconne{
+       font-size:200%
+   }
+   .vt{
+       margin-left: -15%;
+   }
+   .text-m{
+       font-size:90%
+   }
+   .footer{
+    background-color: #2A363F;
+    margin-bottom: 80px;
+}
+}
+/*phan ket cua footer va menu-bottom*/
